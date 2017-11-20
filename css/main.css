@@ -53,7 +53,8 @@ img {
 #menu-trigger .material-icons {
 	display: none;
 	position: fixed;
-    right: 10px;
+	right: 0;
+	padding: 25px 0;
     width: 30px;
 }
 
