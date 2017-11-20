@@ -6,11 +6,10 @@
 
 	<title>LeoKao</title>
 
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/icon.min.css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -23,18 +22,29 @@
 			<div id="header" class="topbar clearfix">
 				<div id="nav">
 					<ul>
-						<li><a href="#">top</a></li>
-						<li><a href="#">about</a></li>
-						<li><a href="#">experience</a></li>
-						<li><a href="#">abilities</a></li>
-						<li><a href="#">interests</a></li>
+						<li><a href="#header-back">top</a></li>
+						<li><a href="#about">about</a></li>
+						<li><a href="#experience">experience</a></li>
+						<li><a href="#abilities">abilities</a></li>
+						<li><a href="#interests">interests</a></li>
 					</ul>
 				</div>
+				
 				<div class="menu-trigger">
 					<a href="#" id="menu-trigger">
 						<i class="material-icons">menu</i>
 					</a>
 				</div>
+				<div id="mobile-nav">
+					<ul>
+						<li><a href="#header-back">top</a></li>
+						<li><a href="#about">about</a></li>
+						<li><a href="#experience">experience</a></li>
+						<li><a href="#abilities">abilities</a></li>
+						<li><a href="#interests">interests</a></li>
+					</ul>
+				</div>
+
 							
 			</div>
 
@@ -49,46 +59,189 @@
 		            </ul>
 		        </div>
 			</div>
-			<a href="#" id="goto-second-page">
+			<a href="#about" id="goto-second-page">
 				<i class="material-icons">expand_more</i>
 			</a>
 		</div>
 	</header>
 
+	<!--about-->
+	<section id="about">
+		<div class="container">
+			<div class="about-title">
+				<h2>about</h2>
+				<hr />
+			</div>
+
+			<div class="about">
+				<div class="row">  <!--remember use row to let them in line-->
+					<div class="col-sm-6">
+						<img class="my-photo" src="assets/my_photo.jpg" alt="image">
+					</div>
+					<div class="col-sm-6">
+						<h3>Chia Hung, kao</h3>
+						<h5>何とかなる</h5>
+						<p>
+							<span class="article-first-word">I</span> was born at Taipei, Taiwan. <br/>I graduated from <b>National Central University (NCU), College of Electrical Engineering &amp; Computer Science, Bachelor of Computer Science &amp; Information Engineering</b> since Jun. 2015. <br/>Mandarin(Native), English and Japanese.
+						</p>
+					</div>
+				</div>
+				<!-- <div class="about-link">
+					<ul>
+						<li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+						<li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
+						<li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+						<li><a href=""><i class="fa fa-wordpress" aria-hidden="true"></i>
+				</div></a></li>
+					</ul> -->
+			</div>
+		</div>
+	</section>
+
+	<hr/>
+
+<!--experience-->
+	<section id="experience">
+		<div class="container">
+			<div class="heading-title text-center text-uppercase">
+				<h2>experience</h2>
+				<p>Be brave. Take risks. Nothing can substitute experience.</p>
+			</div>
+			<div class="row experience">
+				<div class="col-sm-4">
+					<div class="icons">
+						<i class="material-icons">person_add</i>
+					</div>
+					<hr />
+					<h4>Working Holiday in Japan</h4>
+					<ul>
+						<li>Worked as Khaosan Guesthouse Staff, Family Mart Clerk, Takahan Spring Hotel Staff, The Rose &amp; Crown Victorian Pub Staff etc across Kyoto, Niigata, Hokkaido, Tokyo and Okinawa.</li>
+						<li>Participated in the “Unpopulated Island Project”, in which we had to survive on ourselves for three days with no external access and support.</li>
+						<li>Facilitated Japankuru to promote new information to Taiwanese as a copywriter and blog influencer.</li>
+						<li>Selected as an operation Staff to coordinate the Taiwan Festival 2017 in Ueno and served as a salesman
+of Chinese omelet vendor.</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="icons">
+						<i class="material-icons">android</i>
+					</div>
+					<hr />
+					<h4>Android Developer Internship</h4>
+					<ul>
+						<li>Used Android Studio, Github to develop project.</li>
+						<li>Cooperated with another two intern to conceptualize and design an android application which aims to
+recommend restaurants and attractions in Taipei for tourists mainly from Hong Kong and China.</li>
+						<li>Supported Android Team and implemented new page design, appending functions, UX optimization.</li>
+						<li>Participated in workshop for programming.</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="icons">
+						<i class="material-icons">insert_drive_file</i>
+					</div>
+					<hr />
+					<h4>NCU Unplugged Guitar Contest</h4>
+					<ul>
+						<li>Led a host team of 50+ people and prepared the event for 5+ months.</li>
+						<li>Devised and executed the whole event from venue planning, budget control to logistics preparation.</li>
+						<li>Acquired 40+ participating teams by utilizing social marketing strategy.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr />
+
+<!--abilities-->
 	<section>
 		<div class="container">
-			<div class="about">
-				<div class="row">
-					<div class="col-6">
-						
+			
+		</div>
+	</section>
+
+	<hr/>
+
+	<!--interest-->
+	<section id="interests">
+		<div class="container">
+			<div class="heading-title text-center text-uppercase">
+				<h2>interests</h2>
+				<p>Where are you interested in, that is, where you can.</p>
+			</div>			
+			<div class="row interest">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-sm-2">
+							<i class="material-icons">flight_takeoff</i>
+						</div>
+						<div class="col-sm-10">
+							<h3>travel</h3>
+							<p>One-year working holiday in Japan since Sep. 2016.<br/>Taiwan, Japan, Korea, Tailand etc.</p>
+						</div>
 					</div>
-					<div class="col-6">
-						
+				</div>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-sm-2">
+							<i class="material-icons">camera</i>
+						</div>
+						<div class="col-sm-10">
+							<h3>Photography</h3>
+							<p>Record impressing scenery in life.<br/>Use Canon 400D with 18-55mm lens &amp; iphone 6s.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-sm-2">
+							<i class="material-icons">audiotrack</i>
+						</div>
+						<div class="col-sm-10">
+							<h3>Music</h3>
+							<p>Especially acoustic guitar playing, independent music, country music &amp; Britpop etc.<br/> Mayday, Coldplay, Jason Mraz etc.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-sm-2">
+							<i class="material-icons">directions_run</i>
+						</div>
+						<div class="col-sm-10">
+							<h3>Exercise</h3>
+							<p>Jogging, bicycling, hiking, skiing, swimming.<br/>Had climbed Mount Fuji in Aug. 2017. Intresting in Open-Water for next.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-sm-2">
+							<i class="material-icons">code</i>
+						</div>
+						<div class="col-sm-10">
+							<h3>New Tech</h3>
+							<p>Web development, mobile application, start-up and technology for making world better.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-sm-2">
+							<i class="material-icons">restaurant</i>
+						</div>
+						<div class="col-sm-10">
+							<h3>gourmet</h3>
+							<p>Delicious cuisine, special culture or handmade food.<br/> Cooking is charming as well. </p>
+						</div>
 					</div>
 				</div>
 			</div>
-			
 		</div>
 	</section>
 
-	<section>
-		<div class="container">
-			
-		</div>
-	</section>
-
-	<section>
-		<div class="container">
-			
-		</div>
-	</section>
-
-	<section>
-		<div class="container">
-			
-		</div>
-	</section>
-
-	
 </body>
 </html>
