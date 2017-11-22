@@ -10,14 +10,14 @@ $(document).ready(function(){
 	});
 
 	$('#goto-second-page').click(function(e){
+		e.stopPropagation();   
 		$("html, body").animate({ scrollTop: $('#about').offset().top }, 1000);	
 	});
 
 	$('.header img').mouseenter(function(){
-		$('.about-link').slideDown();
-
+		$('.about-link').stop().slideDown();
 	});
-	$('.about-link li').mouseout(function(){
-		$('.about-link').slideUp();
+	$('.about-link ul').mouseout(function(){
+		$('.about-link').stop().slideUp();
 	});
 });
