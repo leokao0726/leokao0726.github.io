@@ -193,7 +193,14 @@ hr {
 	height: auto;
 	box-shadow: 3px 3px 12px gray;
 	padding: 3px;
+	opacity: .3;
+	transition: opacity 1s linear;
 }
+
+.my-photo.in{
+	opacity: 1;
+}
+
 
 .about-link {
 	width: 100%;
@@ -231,6 +238,10 @@ hr {
 	background: rgba(0, 0, 0, 0.5);
 }
 
+#abilities .title {
+	text-align: center;
+}
+
 .abilities h3{
 	color: #D3D7DC;
 	text-transform: capitalize;
@@ -253,12 +264,45 @@ hr {
 	position: relative;
 	padding-left: 15px;
 	background-color: black;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
 	color: white;
 	text-transform: uppercase;
 	font-size: 16px;
 	line-height: 30px;
 	height: auto;
 	border-radius:0;
+	
+}
+
+.progress-bar .progress.start{
+	animation: progress 0.8s ease-in-out forwards;
+}
+
+.progress-bar .progress .title {
+	font-size: 0;
+}
+
+.progress-bar .progress .title.start {
+    animation: show 1s forwards ease-in-out 0.6s;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} 
+@keyframes show  {
+  from {
+    opacity: 0;
+    font-size: 0;
+  }
+  to {
+    opacity: 1;
+    font-size: 14px;
+  }
 }
 
 /*.progress-bar .pin {
@@ -298,6 +342,7 @@ hr {
 	    border: 7px solid #D3D7DC;
 	    border-radius: 50%;
 	    box-shadow: 8px 8px 15px gray;
+	    transform: scale(1);
 	    transition: all 0.6s;
 	}
 
@@ -361,6 +406,23 @@ hr {
 
 @media (max-width: 650px) {
 
+	h4 {
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.icons{
+		margin-top: 40px;
+	}
+
+	.row .col-sm-2 {
+		margin-top: 40px;
+	}
+
+	.interest {
+		text-align: center;
+	}
+
 	#menu-trigger {
 		z-index: 10;
 	}
@@ -414,6 +476,10 @@ hr {
 		text-decoration: none;
 	}
 
+	#my-name {
+		margin-top: 10px;
+	}
+
 	.header img{
 	    margin: 10px 0 0 0;
 	    width: 250px;
@@ -421,6 +487,9 @@ hr {
 	    text-align: center;
 	    border: 7px solid #D3D7DC;
 	    border-radius: 50%;
+	    box-shadow: 8px 8px 15px gray;
+	    transform: scale(1);
+	    transition: all 0.6s;
 	}
 
 	.about-link {
@@ -443,6 +512,10 @@ hr {
 	.about-link a:hover {
 		color: white;
 		text-decoration: none;
+	}
+
+	.about p {
+		text-align: center;
 	}
 
 	.pin {
