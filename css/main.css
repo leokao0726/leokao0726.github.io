@@ -188,6 +188,10 @@ hr {
 	color: #D3D7DC;
 }
 
+.photo {
+	line-height: 291px;
+}
+
 .my-photo {
 	width: 100%;
 	height: auto;
@@ -230,6 +234,38 @@ hr {
 	margin: 0 10%;
 	list-style-type: circle; 
 }
+
+#switch {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#switch ul {
+	display: inline;
+}
+
+#switch li {
+	display: inline;
+	padding: 5px 7px;
+	margin: 0 2px;
+	border-radius: 2px;
+	text-transform: uppercase;
+	transition: all 0.6s linear;
+}
+
+#switch li.active, #switch li:hover {
+	background-color: #D3D7DC;
+	color:white;
+}
+
+.content {
+	display: none;
+}
+
+.content.active {
+	display: block;
+}
+
 
 /*abilities*/
 

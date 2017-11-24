@@ -15,8 +15,16 @@ $(document).ready(function(){
 		$("html, body").animate({ scrollTop: $('#about').offset().top }, 1000);	
 	});
 
+	$('#switch li').click(function(e){
+		var index = $(this).index();
+		$('#switch li').removeClass('active').eq(index).addClass('active');
+		$('.content').removeClass('active').eq(index).addClass('active');
+
+	});
+
+
 	$(document).scroll(function(){
-		if ($(this).scrollTop() > $('#about').offset().top) {
+		if ($(this).scrollTop() > 700) {
 			$('.my-photo').addClass('in');
 		}
 		if ($(this).scrollTop() > $('#abilities').offset().top) {
